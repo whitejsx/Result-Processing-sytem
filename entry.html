@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+    }
+
+    h1 {
+        color: rgb(255, 52, 25);
+    }
+    img{
+        width: 100px;
+        height: 100;
+        object-fit: contain;
+    }
+H4{
+    color: rgb(59, 32, 25);
+}
+ .header-banner{
+    display: flex;
+    flex-direction: row;
+ }
+ hr{
+    border: 1px solid black;
+    width: 222px;
+ }
+ .form_entry{
+    background-color: #f2f5f5;
+    padding: 20px;
+    margin-top: 50px;
+ }
+ input{
+    padding: 5px;
+    border-radius: 5px;
+   border: none;
+   width: 100%;
+   margin-top: 5px;
+   border-width: 1px white;
+ }
+  .input-style{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: right;
+        margin-bottom: 20px;
+  }
+  button{
+    width: 100%;
+    padding: 5px;
+    color: rgb(243, 60, 14);
+  }
+   button:hover{
+    background-color: rgb(243, 60, 14);
+    color: #f2f5f5;
+    border: none;
+  }
+    button:active{
+    background-color: rgb(245, 175, 157);
+    color: #ff2a04;
+    border: none;
+  }
+</style>
+<script src="./ResultEngin.js" type="text/javascript"></script>
+<body>
+    <div class="main-content">
+        <div class="header-banner">
+        <img src="pic.jpg" class="Logo"></img>
+        <div style="margin: 20px;">
+        <h1>BARS-V23 </h1>
+        <H4>Barkindo Result Processing System (BRPS)</H4>
+        <hr />
+        </div>
+        </div>
+        
+       <div class="form_entry">
+        
+            <div class="input-style">
+            <label for="className">Class:</label>
+            <input type="text" name="className" id="className" placeholder="Class name" required>
+            </div>
+            <div class="input-style">
+                <label for="teacherId">Teacher Name:</label>
+                <input type="text" name="teacherId" id="teacherId" placeholder="teacher name" required>
+            </div>
+        
+            <div>
+                <button onclick="proceed();" type="submit">Procced..</button>
+            </div>
+    
+       </div>
+    </div>
+</body>
+</html>
