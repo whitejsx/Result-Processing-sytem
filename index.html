@@ -1,272 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Result</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
 </head>
 <style>
-	@page {
-	    size: 7in 10.25in;
-	    margin: 28mm 16mm 27mm 16mm;
-		}
-	*{
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-		font-family: monospace;
-
-		
-	}
-	.Logo{
-	
-		width: 120px;
-		height: 100px;
-		left: 43px;
-		top: 86px;
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-	body{
-		display: flex;
-		justify-content: center;
-		background: rgba(0, 0, 0, 0.9);
-		box-align: center;
-		align-content: center;
-		
-	}
-	.contenier{
-			height:297mm;
-    		width:210mm;
-			background-color: white;
-			display: block;
-			align-items: center;
-			justify-content: center;
-			padding: 20px;
-			
-	}
-	.box-outline{
-		box-sizing: border-box;
-		position: absolute;
-		width: 200mm;
-		height: 290mm;
-		background: #FFFFFF;
-		border: 5px solid #000000;
-		border-radius: 16px;
-		margin: 2px 'auto';
-		
-		background-repeat: no-repeat;
-		background-position: center;
-		background-blend-mode: screen;
-	}
-	.tiny{
-		display: flex;
-		justify-content: space-between;
-		padding: 10px;
-	}
-	.banner{
-		display: flex;
-		justify-content: space-around;
-		flex-direction: row;
-		align-items: center;
-		width: 100%;
-		height: 100px;
-	}
-	.basic-info{
-		width: 100%;
-		height: 130px;
-		left: 189px;
-		top: 86px;
-		background: rgba(217, 217, 217, 0.6);
-		mix-blend-mode: normal;
-		opacity: 0.7;
-		display: block;
-		padding: 10px;
-		overflow: hidden;
-		margin-top: 10px;
-	}
-	.text{
-		font-weight: 800;
-		font-size: larger;
-	}
-	.option-value{
-		font-size: 17px;
-		 letter-spacing: 1px;
-		 font-variant-ligatures: normal;
-	 text-decoration: underline;
-	 text-align: center;
-	}
-	.h3{
-		margin: 20px;
-		font-style: normal;
-		font-weight: 900;
-		padding: 20px;
-	}
-	table {
-  border-spacing: 3px;
-  background-color: #f3f4f6;
-  border-collapse: collapse;
-}
-th {
-  border-bottom: 1px solid #ddd;
-}
-	th, td {
-  		padding: 5px;
-		
-}
-td{
-	 border-bottom: 1px solid #ddd;
-	 padding: 10px;
-	 
-}
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: auto;
+    }
+    h1{
+        color:rgb(255, 52, 25);
+    }
+    .btn_brakindo{
+        width: 10rem;
+        padding: 8px;
+        border-radius: 5px;
+        background-color: brown;
+        border-style: none;
+        color: #f5f4f3;
+    }
+    .btn_brakindo:hover{
+         background-color: rgb(206, 34, 34);
+    }
+     .btn_brakindo:active{
+         background-color: rgb(231, 12, 12);
+          border: 3px rgb(117, 9, 72) solid;
+    }
+    .Logo{
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
 </style>
 <script src="./ResultEngin.js" type="text/javascript"></script>
 <body>
-
-	<!-- main container -->
-	<div class="contenier">
-	<!-- heading  -->
-	<div class="box-outline">
-		<div class="tiny">
-			<p>Report:____________Term 20_________</p>
-			<p>ADMISION NO:_________________________</p>
-		</div>
-		<div class="banner">
-			<img src="pic.jpg" class="Logo"></img>
-		<div style="text-align: center; font-size:large; font-weight:400">
-			<h3>BARKINDO ACADEMY
-			NURSERY AND PRIMARY SCHOOL</h3>
-			<i>WAURU-JABBE YOLA SOUTH</i>
-			<p>END OF TERM REPORT CARD</p>
-			<p>Motto: <i>Learning for progress</i></p>
-		</div>
-		</div>
-		<!-- basic information -->
-		<div class="basic-info">
-			<p class="text">Pupils FullName:<span class="option-value">Abudul Yusuf</span></p>
-			<div style="display:flex;justify-content: space-between;padding-top:10px">
-				<p class="text">Admission No:<span class="option-value">200390</span></p>
-				<p class="text">Sex: <span class="option-value">M</span></p>
-				<p class="text">Age: <span class="option-value">12+</span></p>
-				<p class="text">Class: <span class="option-value">Primary 2</span></p>
-			</div>
-			<div style="display:flex;justify-content: space-between;padding-top:10px">
-				<p class="text">Term: <span class="option-value">2nd term</span></p>
-				<p class="text">Academic Session: <span class="option-value">2020/2021</span></p>
-				<p class="text">Higher average in the class:<span class="option-value"></span></p>
-			</div>
-			<div style="display:flex;justify-content: space-between;padding-top:10px">
-				<p class="text">Number in Class: <span class="option-value">20</span></p>
-				<p class="text">House: <span class="option-value">ble</span></p>
-				<p class="text">Attendance: <span class="option-value"></span></p>
-				<p class="text">Days out of:<span class="option-value">240</span> </p>
-			</div>
-		</div>
-		<div>
-		
-		
-		<!-- table entry here -->
-		<div>
-			<h3 style="margin-top: 20px;">COGNATIVE DOMAIN</h3>
-			<table style="width:100%">
-				<tr>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th>(a)</th>
-					<th>(b)</th>
-					<th>(c)</th>
-					<th>(d)</th>
-					<th>(e)</th>
-					<th>(f)</th>
-				</tr>
-				<tr>
-					<th></th>
-					<th></th>
-					<th colspan="2">Subject</th>
-					<th style="transform: rotate(270deg);">score</th>
-					<th>Periodic
-					Test 1</th>
-					<th>Periodic
-					Test 2</th>
-					<th>Periodic
-					Test 3</th>
-					<th>Average
-					(a+b+c)</th>
-					<th>End of
-					term Exam</th>
-					<th>Grade
-					(A-E)</th>
-					<th>Teacher’s
-					Remark
-					& Signature</th>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td>Mathmatice</td>
-					<td></td>
-					<td></td>
-					
-					<td>23</td>
-					<td>12</td>
-					<td>16</td>
-					<td>16</td>
-					<td>16</td>
-					<td>F</td>
-					<td>V.GOOD</td>
-
-				
-					
-				</tr>
-
-
-				<tr>
-					<td></td>
-					<td></td>
-					<td>Mathmatice</td>
-					<td></td>
-					<td></td>
-				
-					<td>23</td>
-					<td>12</td>
-					<td>16</td>
-					<td>16</td>
-					<td>16</td>
-					<td>F</td>
-					<td>V.GOOD</td>
-				
-				
-				
-				</tr>
-
-				<tr>
-					<td></td>
-					<td></td>
-					<td>Mathmatice</td>
-					<td></td>
-					<td></td>
-				
-					<td>23</td>
-					<td>12</td>
-					<td>16</td>
-					<td>16</td>
-					<td>16</td>
-					<td>F</td>
-					<td>V.GOOD</td>
-				
-				
-				
-				</tr>
-			</table>
-		</div>
-	</div>
-	<!-- result tables -->
-	<!-- table footer -->
-	<!-- other school activities -->
-	<!-- princal recommendation and sign -->
-</div>
+    <div class="main-content">
+        <img src="pic.jpg" class="Logo"></img>
+        <h1>Result Processing System </h1>
+       
+        <a href="entry.html">
+        <button class="btn_brakindo">
+            Start
+        </button>
+        </a>
+        <p style="margin-top:60px">
+            This application is only linence to Brakindo Academy
+        </p>
+    </div>
 </body>
 </html>
