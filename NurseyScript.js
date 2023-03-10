@@ -1,5 +1,5 @@
 function NurseryResult() {
-  // console.log("HELLO")
+
  var fullName = document.getElementById("fullName").value;
  var termSelect = document.querySelector("#termSelect").value;
  var gender = document.querySelector('input[name="flexRadioDefault"]:checked');
