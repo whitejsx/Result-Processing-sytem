@@ -162,34 +162,9 @@
                         </script>
                       </td>
                       <td id="grade">
-                        <script>
-                             var grade1 =  document.getElementById("grade") 
-                            var gradefxn = grading(test1,test2,exam1)
-
-                            if ( 100 <= gradefxn >= 85 ){
-                                alert("A")
-                                grade1.innerHTML = "A"
-                            }else if ( 85 >= gradefxn >= 75){
-                                alert("B")
-                                grade1.innerHTML = "B"
-                            }else if ( 65 >= gradefxn >= 55){
-                                alert("C")
-                                grade1.innerHTML = "C"
-                            }else if ( 55 >= gradefxn >= 45){
-                                alert("D")
-                                grade1.innerHTML = "D"
-                            }else if ( 45 >= gradefxn >= 35){
-                                alert("E")
-                                grade1.innerHTML = "E"
-                            }else if ( 0 <= gradefxn <= 35){
-                                alert("F")
-                                grade1.innerHTML = "F"
-                            }
-                        
                        
-                        </script>
                         </td>
-                      <td>Execellent</td>
+                      <td id="remark"></td>
                     </tr>
                    </i>
                   </tbody>
@@ -201,6 +176,39 @@
         </div>
         
     </div>
+    <script>
+        var grade1 =  document.getElementById("grade") 
+        var remark =  document.getElementById("remark") 
+       var gradefxn = grading(test1,test2,exam1)
+
+       if ( 100 <= gradefxn >= 85 ){
+           alert("A")
+           grade1.innerHTML = "A"
+           remark.innerHTML = "Excellent"
+       }else if ( 85 >= gradefxn >= 75){
+           alert("B")
+           grade1.innerHTML = "B"
+           remark.innerHTML = "Very Good"
+       }else if ( 65 >= gradefxn >= 55){
+           alert("C")
+           grade1.innerHTML = "C"
+           remark.innerHTML = "Upper Credit"
+       }else if ( 55 >= gradefxn >= 45){
+           alert("D")
+           grade1.innerHTML = "D"
+           remark.innerHTML = "Lower Credit"
+       }else if ( 45 >= gradefxn >= 35){
+           alert("E")
+           grade1.innerHTML = "E"
+           remark.innerHTML = "Pass"
+       }else if ( 0 <= gradefxn <= 35){
+           alert("F")
+           grade1.innerHTML = "F"
+           remark.innerHTML = "Fail"
+       }
+   
+  
+   </script>
 </body>
 
 </html>
