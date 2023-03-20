@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding: 20px;
+    align-content: center;
+    color: #f5f4f3;
+}
