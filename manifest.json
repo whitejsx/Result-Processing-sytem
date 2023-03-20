@@ -4,7 +4,7 @@
     "short_name": "AD result",
     "start_url": ".",
     "background_color": "#f5f4f3",
-    "theme_color": "#009578",
+    "theme_color": "#950061",
     "display": "standalone",
     
     "icons": [
