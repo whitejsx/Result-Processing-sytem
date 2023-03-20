@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./resultScript.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="sheet.css">
+    <title>Report Sheet</title>
+    <meta name="theme-color" content="#009578">
+    <link rel="apple-touch-icon" href="img/bb3.png" >
+    <link rel="manifest" href="manifest.json">
+    <script src="./resultScript.js"></script>
+</head>
+
+<body>
+    <div class="container contenier">
+        <div class="container box-outline">
+            <div class="container box-outline-side">
+                <div class="container header-info">
+                    <div class="top-detail">
+
+                        <div class=" alert-light head">
+
+
+                            <strong>
+                                Report:____________Date: <span id="headerDate">
+                                    <script>
+                                        const d = new Date("2021-03-25")
+                                        document.getElementById('headerDate').innerHTML = d.getFullYear()
+                                    </script>
+                            </strong>
+                            </P>
+                            <p>
+                                ADMISION :
+                                <span id="admission">
+                                    <script>
+                                        var rand = Math.floor(Math.random() * 300000);
+                                        var dd = new Date("2021-03-25")
+                                        document.getElementById('admission').innerHTML = rand + dd.getFullYear()
+                                    </script>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid head-main">
+                        <div class="box-header">
+                            <img src="./pic.png" alt="Logo" srcset="">
+                        </div>
+                        <div class="box-header">
+                            <h1 class="h1 h-400">AB. USMAN MODERN ACADEMY</h1>
+                            <h4 class="h4">Nursery And Primary School</h4>
+                            <h6>Address:Numan Road Samu Naka </h6>
+                            <p><i>Motto:</i>Learn Together; Succeeding Together</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detail container-fluid">
+                        <div class="container mt-3">
+                            <h6>Student Information</h6>
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th>Pupils FullName: <span id="stdName">
+                                    <script>
+                                       var viewNames = localStorage.getItem("fullName");
+                                        document.getElementById("stdName").innerHTML = viewNames
+                                    </script>
+                                  </span></th>
+                                  <th>Class:<span id="stdClass">
+                                    <script>
+                                        var stdClass = localStorage.getItem("classStudent");
+                                         document.getElementById("stdClass").innerHTML = stdClass
+                                     </script>
+                                  </span> </th>
+                                  <th>Sex:  <span> Male</span></th>
+                                </tr>
+                              </thead>
+
+                              <thead>
+                                <tr>
+                                  <th>Term: <span id="term">
+                                    <script>
+                                        var stdterm = localStorage.getItem("termSelect");
+                                         document.getElementById("term").innerHTML = stdterm
+                                     </script>
+                                  </span></th>
+                                  <th>Average:<span>Primary 2</span> </th>
+                                  <th>Year:  <span id="stdYear">
+                                    <script>
+                                        var stdYear = localStorage.getItem("yearSelect");
+                                         document.getElementById("stdYear").innerHTML = stdYear
+                                     </script>
+                                  </span></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                             
+                             
+                              
+                              </tbody>
+                            </table>
+                          </div>
+                    </div>
+                </div>
+               <!-- score sheet -->
+               <h3>COGNATIVE DOMAIN
+            </h3>
+               <div class="container mt-3">
+  
+                <table class="table table-bordered table-sm table-striped ">
+                  <thead>
+                    <tr >
+                      <th></th>
+                      <th>(a)</th>
+                      <th>(b)</th>
+                       <th>(c)</th>
+                      <th>(d)</th>
+                      <th>Grade (a - d)</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    
+                      <td><i><b>Subject</b></i></td>
+                      <td><i><b>1st C.A </b></i></td>
+                      <td><i><b>2nd C.A </b></i></td>
+                      <td><i><b>End of term Exam </b></i></td>
+                      <td><i><b>Grade (a - c)</b></i></td>
+                      <td><i><b>Teacher’s Remark & Signature</b></i></td>
+                    </tr>
+                    <i>
+              
+                    <tr>
+                      <td id="Sub1">
+                        <script>
+                            var Sub1 = localStorage.getItem("Subject1");
+                           var Sub11 =  document.getElementById("Sub1").innerHTML = Sub1
+                        </script>
+                      </td>
+                      <td id="test1">
+                        <script>
+                            var test1 = localStorage.getItem("NurseryCaTest1");
+                           var test11 =  document.getElementById("test1").innerHTML = test1
+                        </script>
+                      </td>
+                      <td id="test2">
+                        <script>
+                            var test2 = localStorage.getItem("NurseryCaTest2");
+                           var test22 =  document.getElementById("test2").innerHTML = test2
+                        </script>
+                      </td>
+                      <td id="exam1">
+                        <script>
+                            var exam1 = localStorage.getItem("NurseryExam");
+                           var exam12 =  document.getElementById("exam1").innerHTML = exam1
+                        </script>
+                      </td>
+                      <td id="grade">
+                        <script>
+                             var grade1 =  document.getElementById("grade") 
+                            var gradefxn = grading(test1,test2,exam1)
+
+                            if ( 100 <= gradefxn >= 85 ){
+                                alert("A")
+                                grade1.innerHTML = "A"
+                            }else if ( 85 >= gradefxn >= 75){
+                                alert("B")
+                                grade1.innerHTML = "B"
+                            }else if ( 65 >= gradefxn >= 55){
+                                alert("C")
+                                grade1.innerHTML = "C"
+                            }else if ( 55 >= gradefxn >= 45){
+                                alert("D")
+                                grade1.innerHTML = "D"
+                            }else if ( 45 >= gradefxn >= 35){
+                                alert("E")
+                                grade1.innerHTML = "E"
+                            }else if ( 0 <= gradefxn <= 35){
+                                alert("F")
+                                grade1.innerHTML = "F"
+                            }
+                        
+                       
+                        </script>
+                        </td>
+                      <td>Execellent</td>
+                    </tr>
+                   </i>
+                  </tbody>
+                </table>
+              </div>
+            <!-- end of score sheet -->
+            </div>
+           
+        </div>
+        
+    </div>
+</body>
+
+</html>

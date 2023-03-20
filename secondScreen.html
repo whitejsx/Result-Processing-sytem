@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="theme-color" content="#009578">
+    <link rel="apple-touch-icon" href="img/bb3.png" >
+    <link rel="manifest" href="manifest.json">
+    <title>Result</title>
+</head>
+<body>
+    <center>
+        <div class="banner"> Welcome to result Processing system </div>
+        <div>
+            <form action="ResultProccessing.html" method="get">
+                <h1>Student Credential</h1>
+                <div >
+                    <div style="margin-bottom: 20px;">
+                    <label for="name">Student Name :
+                    <input type="text" name="name" id="name"><br>
+                </div>
+                <div style="margin-bottom: 20px;">
+                </label>
+                <label for="classNumber">Class Number :
+                    <input type="text" name="classNumber" id="classNumber"><br>
+                </label>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="teacherID">Teacher ID :
+                    <input type="text" name="teacherID" id="teacherID" value="AB-20289/12" disabled><br>
+                </label>
+            </div>
+            <div style="margin-bottom: 20px;">
+                    <button  onclick="show()" class="btn bg-primary">
+                        Proceed</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </center>
+    <script src="./resultScript.js"></script>
+</body>
+</html>
